@@ -13,3 +13,19 @@ else:
         print("Invalid amount of arguements.")
         print("Syntax: python3 scanner.py <ip>")
         sys.exit()
+
+#Add a banner
+print("-" *50)
+print("Scanning target" + target)
+print("Time started" +str(datetime.now()))
+print("-" * 50)
+
+try:
+        for port in range(50,85):
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                socket.setdefaulttimeout(1) 
+                result = s.connect_ex((target.port)) #return error
+                print("Checking port {}".format(port))
+                if result == 0:
+                        print("Port {} is open".format(port))
+                s.close()
