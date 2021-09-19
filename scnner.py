@@ -6,7 +6,6 @@ from datetime import datetime
 
 #Define target
 
-python3 scanner.py <ip>
 if len(sys.argv) == 2:
         target = socket.gethostbyname(sys.argv[1]) #translate hostanme to IPV4
 else:
