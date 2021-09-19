@@ -1,0 +1,15 @@
+#!/bin/python3
+
+import sys  #command line arguments
+import socket
+from datetime import datetime
+
+#Define target
+
+python3 scanner.py <ip>
+if len(sys.argv) == 2:
+        target = socket.gethostbyname(sys.argv[1]) #translate hostanme to IPV4
+else:
+        print("Invalid amount of arguements.")
+        print("Syntax: python3 scanner.py <ip>")
+        sys.exit()
