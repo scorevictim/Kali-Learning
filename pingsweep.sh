@@ -2,7 +2,7 @@
 if [ $1 == "" ]
 then
 echo "Please at least type a range"
-echo "Example: ./ping.sh 192.168.1"
+echo "Example: ./pingsweep.sh 192.168.1"
 
 
 else
