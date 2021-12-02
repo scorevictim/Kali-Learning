@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $1 == "" ]
+if [ "$1" == "" ]
 then
 echo "Please at least type a range"
 echo "Example: ./pingsweep.sh 192.168.1"
